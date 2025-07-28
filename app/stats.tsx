@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Separator } from "@/components/ui/separator";
 
 interface StatCardProps {
@@ -11,24 +11,38 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ number, label, description }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const cardRef = React.useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Capture the current ref value inside the effect
+    const currentCardRef = cardRef.current;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target);
+          // Stop observing once visible
+          if (currentCardRef) { // Check if it still exists before unobserving
+            observer.unobserve(currentCardRef);
+          }
         }
       },
       { threshold: 0.1 }
     );
 
-    if (cardRef.current) observer.observe(cardRef.current);
+    // Observe the element if it exists
+    if (currentCardRef) {
+      observer.observe(currentCardRef);
+    }
+
+    // Cleanup function
     return () => {
-      if (cardRef.current) observer.unobserve(cardRef.current);
+      // Use the captured ref value for cleanup
+      if (currentCardRef) {
+        observer.unobserve(currentCardRef);
+      }
     };
-  }, []);
+  }, []); // Empty dependency array means this effect runs once on mount
 
   const formatNumber = (num: string): string => {
     if (num.includes("%")) return num;
