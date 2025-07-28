@@ -8,6 +8,7 @@ import React, { useState } from "react";
 
 
 const ContactSection = () => {
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,7 +20,8 @@ const ContactSection = () => {
   // Corrected type for focusedField to allow string literal types or null
   const [focusedField, setFocusedField] = useState<'name' | 'email' | 'phone' | 'service' | 'message' | null>(null);
   // Corrected type for submissionStatus to allow specific string literal types or null
-  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'loading' | 'success' | 'error' | null>('idle'); // 'idle', 'loading', 'success', 'error'
+  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'loading' | 'success' | 'error' | null>('idle');
+
   const [errorMessage, setErrorMessage] = useState('');
 
   // Updated handleInputChange to accept ChangeEvent for both HTMLInputElement and HTMLTextAreaElement
@@ -61,30 +63,27 @@ const ContactSection = () => {
       const result = await response.json(); // Parse the JSON response
 
       if (result.success) {
-        // @ts-expect-error: Web3Forms result type is not fully inferred for 'success'
-        setSubmissionStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          service: '',
-          message: ''
-        }); // Clear form
-        // @ts-expect-error: Web3Forms result type is not fully inferred for 'idle'
-        setTimeout(() => setSubmissionStatus('idle'), 5000); // Clear message after 5 seconds
-      } else {
-        // @ts-expect-error: Web3Forms result type is not fully inferred for 'error'
-        setSubmissionStatus('error');
-        setErrorMessage(result.message || 'Something went wrong. Please try again.');
-        // @ts-expect-error: Web3Forms result type is not fully inferred for 'idle'
-        setTimeout(() => setSubmissionStatus('idle'), 5000); // Clear message after 5 seconds
-      }
+  setSubmissionStatus('success');
+  setFormData({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+  setTimeout(() => setSubmissionStatus('idle'), 5000);
+} else {
+  setSubmissionStatus('error');
+  setErrorMessage(result.message || 'Something went wrong. Please try again.');
+  setTimeout(() => setSubmissionStatus('idle'), 5000);
+}
+
     } catch (error) {
       console.error('Submission error:', error);
-      // @ts-expect-error: Web3Forms result type is not fully inferred for 'error'
+      
       setSubmissionStatus('error');
       setErrorMessage('Network error. Please check your connection and try again.');
-      // @ts-expect-error: Web3Forms result type is not fully inferred for 'idle'
+     
       setTimeout(() => setSubmissionStatus('idle'), 5000); // Clear message after 5 seconds
     }
   };
