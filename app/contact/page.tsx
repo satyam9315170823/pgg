@@ -246,7 +246,7 @@ const ContactSection = () => {
                     <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto"></div>
                     <div className="w-16 h-1 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full mx-auto mt-2 opacity-60"></div>
                   </div>
-                  {/* Removed @ts-expect-error as the type is now correctly handled by FormEvent */}
+              
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="group/input">
                       <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2 transition-colors duration-300 group-focus-within/input:text-blue-600">
