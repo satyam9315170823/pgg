@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,6 +12,8 @@ import {
 } from "framer-motion";
 
 const links = [
+
+  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
@@ -92,25 +94,32 @@ const Navbar = () => {
         variants={navbarVariants}
       >
         <div className="mx-auto flex justify-between items-center">
-          <Link href={"/"} className="flex items-center space-x-1">
+          {/* <Link href={"/"} className="flex items-center space-x-1">
             <div className="rounded-full bg-black w-6 h-6 " />
-            <span className="text-xl font-bold">Awesome Studio</span>
-          </Link>
+            <span className="text-xl font-bold">Prettify Go Global</span>
+          </Link> */}
+          <Link href={"/"} className="flex items-center space-x-1">
+  <Image src="/logoMain.svg" alt="Logo" width={38} height={38} />
+  <span className="text-xl font-bold">Prettify Go Global</span>
+</Link>
+
 
           {/* desktop menu */}
-          <div className="hidden md:flex space-x-8">
-            {links.map((link) => (
-              <Link
-                href={link.href}
-                key={link.href}
-                className={`${
-                  pathname === link.href ? "text-black" : "text-neutral-400"
-                } hover:text-black transition-colors duration-200`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+      
+<div className="hidden md:flex space-x-8">
+  {links.map((link) => (
+    <Link
+      href={link.href}
+      key={link.href}
+      className={`${
+        pathname === link.href ? "text-blue-600 font-bold" : "text-black font-bold"
+      } hover:text-blue-600 transition-colors duration-200`}
+    >
+      {link.label}
+    </Link>
+  ))}
+</div>
+
 
           {/* mobile menu button */}
           <button
@@ -138,8 +147,8 @@ const Navbar = () => {
                 href={link.href}
                 key={link.href}
                 className={`${
-                  pathname === link.href ? "text-black" : "text-neutral-400"
-                } hover:text-black`}
+        pathname === link.href ? "text-blue-600 font-bold" : "text-black font-bold"
+      } hover:text-blue-600 transition-colors duration-200`}
               >
                 {link.label}
               </Link>

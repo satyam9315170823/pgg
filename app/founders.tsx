@@ -30,109 +30,85 @@ interface Founder {
   }
 
 
-const founders: Founder[] = [
-    {
-      name: "Alex Johnson",
-      role: "CEO & Founder",
-      image: "/image-1.jpg",
-      description:
-        "Leading our vision with over a decade of experience in AI and business strategy",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        website: "https://website.com",
-      },
+const founders: Founder[] =[
+  {
+    name: "Alex Johnson",
+    role: "CEO, NovaTech Media",
+    image: "/image-1.jpg",
+    description:
+      "Prettify Go Global elevated our brand visibility to new heights. Their social media strategies and PR outreach were top-notch.",
+    social: {
+      linkedin: "https://linkedin.com/in/alexjohnson",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Jamie Lee",
-      role: "CTO",
-      image: "/image-2.jpg",
-      description:
-        "Expert in AI technologies, driving innovation and technical excellence across our projects",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        website: "https://website.com",
-      },
+  },
+  {
+    name: "Jamie Lee",
+    role: "Founder, Lee Innovations",
+    image: "/image-2.jpg",
+    description:
+      "We saw a 300% increase in engagement after partnering with Prettify Go Global. Their branding insights are unmatched.",
+    social: {
+      linkedin: "https://linkedin.com/in/jamielee",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Morgan Smith",
-      role: "Marketing Director",
-      image: "/image-3.jpg",
-      description:
-        "Crafting impactful marketing strategies that resonate with our clients and their audiences",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
+  },
+  {
+    name: "Morgan Smith",
+    role: "CMO, GreenRoot Startups",
+    image: "/image-3.jpg",
+    description:
+      "They don’t just manage PR — they craft compelling stories. Prettify Go Global helped us launch with impact.",
+    social: {
+      linkedin: "https://linkedin.com/in/morgansmith",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Taylor Brown",
-      role: "Lead Developer",
-      image: "/image-4.jpg",
-      description:
-        "Creating innovative solutions with our expert development team",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
+  },
+  {
+    name: "Taylor Brown",
+    role: "Creative Director, BrandMuse",
+    image: "/image-4.jpg",
+    description:
+      "Their UI/UX guidance and marketing synergy made our brand stand out. Highly recommend their creative team.",
+    social: {
+      linkedin: "https://linkedin.com/in/taylorbrown",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Chris White",
-      role: "Head of Design",
-      image: "/image-4.jpg",
-      description:
-        "Driving creative direction and design excellence across all our projects",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
+  },
+  {
+    name: "Chris White",
+    role: "Co-founder, EventBlox",
+    image: "/image-5.jpg",
+    description:
+      "Their event amplification strategies helped us get covered in major publications. Results-driven and reliable.",
+    social: {
+      linkedin: "https://linkedin.com/in/chriswhite",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Emily Green",
-      role: "Product Manager",
-      image: "/image-5.jpg",
-      description:
-        "Leading product development and strategy with a focus on user experience",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
+  },
+  {
+    name: "Emily Green",
+    role: "Head of Operations, StartHub",
+    image: "/image-6.jpg",
+    description:
+      "From campaign execution to influencer outreach — Prettify Go Global handles it all with style and precision.",
+    social: {
+      linkedin: "https://linkedin.com/in/emilygreen",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Ethan Black",
-      role: "Data Scientist",
-      image: "/image-6.jpg",
-      description:
-        "Applying advanced data science techniques to drive insights and innovation",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
+  },
+  {
+    name: "Ethan Black",
+    role: "Product Strategist, TechHive",
+    image: "/image-7.jpg",
+    description:
+      "Our startup gained massive traction post-launch, thanks to their expertly planned PR roadmap.",
+    social: {
+      linkedin: "https://linkedin.com/in/ethanblack",
+       twitter: "https://twitter.com",
     },
-    {
-      name: "Ava Brown",
-      role: "Customer Success",
-      image: "/image-7.jpg",
-      description:
-        "Ensuring our clients receive the best possible service and support",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
-    },
-    {
-      name: "Noah White",
-      role: "Business Development",
-      image: "/image-1.jpg",
-      description:
-        "Building relationships and driving growth through strategic partnerships",
-      social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-      },
-    },
-  ];
+  },
+];
 
 
 
@@ -266,7 +242,7 @@ const Founders = () => {
               Trusted by 400+ Business Owners
             </h2>
             <p className="text-gray-600">
-              Meet the passionate experts driving our AI solutions.
+           Discover Why Leading Brands Trust Prettify Go Global’s Expertise
             </p>
           </div>
           <div className="hidden md:flex gap-2">

@@ -1,20 +1,19 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus } from 'lucide-react';
 
 interface FAQItemProps {
-    question: string;
-    answer: string;
-    }
+  question: string;
+  answer: string;
+}
 
-
-const FAQItem : React.FC<FAQItemProps> = ({ question, answer }) => {
+const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-800 ">
+    <div className="border-b border-gray-800">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-6 flex items-center justify-between text-left"
@@ -22,24 +21,22 @@ const FAQItem : React.FC<FAQItemProps> = ({ question, answer }) => {
         <span className="text-xl font-medium">{question}</span>
         <motion.div
           animate={{ rotate: isOpen ? 45 : 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
           className="flex items-center justify-center"
         >
-          <Plus className="w-6 h-6 " />
+          <Plus className="w-6 h-6" />
         </motion.div>
       </button>
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
+            animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <div className="pb-6 text-neutral-600">
-              {answer}
-            </div>
+            <div className="pb-6 text-neutral-600">{answer}</div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -50,45 +47,43 @@ const FAQItem : React.FC<FAQItemProps> = ({ question, answer }) => {
 const Faq = () => {
   const faqData = [
     {
-      question: "What are your core services as a UX design and branding firm?",
-      answer: "We specialize in user experience design, brand identity development, and web design services that help businesses create meaningful connections with their audiences."
+      question: 'What services does Prettify Go Global offer?',
+      answer:
+        'We offer comprehensive PR solutions including media outreach, brand strategy, reputation management, social media campaigns, influencer marketing, and digital PR tailored to elevate your brand presence.',
     },
     {
-      question: "What separates Epic from other branding and web design agencies?",
-      answer: "Our unique approach combines strategic thinking with cutting-edge design practices, ensuring each project delivers both aesthetic excellence and measurable results."
+      question: 'Who can benefit from your services?',
+      answer:
+        'We work with startups, established businesses, public figures, NGOs, and global brands looking to build visibility, credibility, and long-term goodwill in their industry.',
     },
     {
-      question: "Do you work with clients in different timezones?",
-      answer: "Yes, we have experience working with clients globally and maintain flexible communication schedules to accommodate different time zones."
+      question: 'How do you measure PR success?',
+      answer:
+        'We focus on both qualitative and quantitative metrics such as media mentions, engagement rates, audience reach, sentiment analysis, and business growth outcomes.',
     },
     {
-      question: "How much does hiring you for a design project cost?",
-      answer: "Our pricing varies based on project scope and requirements. We offer customized solutions to meet different budget ranges while maintaining high-quality deliverables."
+      question: 'Can you handle crisis communication?',
+      answer:
+        'Absolutely. We have a dedicated crisis management protocol to protect and restore brand reputation quickly and effectively during sensitive situations.',
     },
     {
-      question: "What is your design process like?",
-      answer: "Our design process is collaborative and iterative, involving clients at every stage to ensure the final product meets their unique needs and goals while maintaining our high standards of quality."
+      question: 'Do you provide international PR services?',
+      answer:
+        'Yes, we operate globally and tailor campaigns to specific markets, ensuring relevance, compliance, and cultural alignment across different regions.',
     },
     {
-        question: "How long does it take to complete a typical design project?",
-        answer: "The timeline for each project varies depending on its complexity and scope. We work closely with clients to establish realistic deadlines and ensure timely delivery."
-    }
+      question: 'How do we get started with Prettify Go Global?',
+      answer:
+        'Simply contact us through our website or email. We’ll schedule a discovery session to understand your goals and craft a strategy aligned with your vision and market.',
+    },
   ];
 
   return (
-    <div className=" 
-    
-    mx-auto 2xl:w-4/5 md:px-16
-    
-     px-6   py-16 pb-32 ">
-      <h1 className="text-4xl font-bold mb-12 ">FAQ</h1>
+    <div className="mx-auto 2xl:w-4/5 md:px-16 px-6 py-16 pb-32">
+      <h1 className="text-4xl font-bold mb-12">FAQ</h1>
       <div className="space-y-2">
         {faqData.map((item, index) => (
-          <FAQItem
-            key={index}
-            question={item.question}
-            answer={item.answer}
-          />
+          <FAQItem key={index} question={item.question} answer={item.answer} />
         ))}
       </div>
     </div>

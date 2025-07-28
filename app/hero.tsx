@@ -98,54 +98,59 @@ const Hero = () => {
         variants={contentVariants}
       >
         <div className="md:max-w-3xl text-center px-4">
-          <motion.h1
-            variants={contentVariants}
-            className="text-5xl md:text-6xl font-bold text-gray-900 mb-4"
-          >
-            <motion.span className="inline-block" variants={contentVariants}>
-              Empowering businesses
-            </motion.span>
-            <br />
-            <motion.span className="inline-block" variants={contentVariants}>
-              with Artificial Intelligence
-            </motion.span>
-          </motion.h1>
+         
+  <motion.h1
+  variants={contentVariants}
+  className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight transition-transform duration-300 hover:scale-105 hover:text-[#1D4ED8]"
+>
+  <motion.span
+    className=" text-[#2748ed] inline-block transition-transform duration-300 hover:scale-105 hover:text-[#39393a]"
+    variants={contentVariants}
+  >
+    Prettify Go Global
+  </motion.span>
+  <br />
+  <motion.span
+    className="inline-block text-2xl md:text-3xl font-medium text-gray-600 mt-2 transition-transform duration-300 hover:scale-105 hover:text-[#DC2626]"
+    variants={contentVariants}
+  >
+    Scale your business with confidence
+  </motion.span>
+</motion.h1>
 
-          <motion.p
-            variants={contentVariants}
-            className="text-xl text-[#7b7b7b] mb-8"
-          >
-            At Awesome Studio designs come
-            <br />
-            to life with our great team
-          
-          </motion.p>
+<motion.p
+  variants={contentVariants}
+  className="text-base md:text-lg text-gray-600 font-normal max-w-2xl mx-auto mb-10 leading-relaxed"
+>
+  Empowering brands through strategic PR and innovative storytelling.
+  <br className="hidden md:block" />
+  We amplify your voice and build lasting, impactful connections.
+</motion.p>
 
-          <motion.div
-            variants={buttonVariants}
-            initial={hasAnimated ? "visible" : "hidden"}
-            animate="visible"
-            className="flex gap-x-3 md:gap-x-6 justify-center mb-10"
-          >
-            <Link
-              href={"/projects"}
-              className="bg-black text-white 
-              px-6 md:px-8 py-3 rounded-full text-lg font-medium transition-all hover:shadow-lg"
-            >
-             View Our Work
-            </Link>
+<motion.div
+  variants={buttonVariants}
+  initial={hasAnimated ? "visible" : "hidden"}
+  animate="visible"
+  className="flex gap-x-4 md:gap-x-6 justify-center mb-12"
+>
+  {/* Button 1: Book a Call */}
+  <Link
+    href={"/book"}
+    className="bg-[#121212] text-white px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium transition-all duration-300 shadow-md hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] hover:bg-[#abcbff] hover:text-black"
+  >
+    Book a Meeting
+  </Link>
 
-            <motion.a
-              href="https://meetings.hubspot.com/productizedos/epic-labs?uuid=fca92f30-4111-4445-9498-af335bb840af"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-red-500 text-white
-               px-6 md:px-8 py-3 rounded-full text-lg
-                font-medium hover:bg-red-600 transition-all hover:shadow-lg inline-block"
-            >
-              Book a meeting
-            </motion.a>
-          </motion.div>
+  {/* Button 2: Showcase */}
+  <motion.a
+    href="/projects"
+    className="bg-white text-black px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium border-4 border-black transition-all duration-300 shadow-md hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
+  >
+    View Our Work
+  </motion.a>
+</motion.div>
+
+
         </div>
       </motion.div>
 

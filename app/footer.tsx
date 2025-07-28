@@ -16,7 +16,6 @@ const Footer = () => {
   const mainLinks = [
     { name: "Projects", href: "/projects" },
     { name: "Services", href: "/services" },
-
     { name: "Clients", href: "/projects" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -29,16 +28,15 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: PiFacebookLogo, href: "#" },
-    { icon: PiInstagramLogo, href: "#" },
-    { icon: PiLinkedinLogo, href: "#" },
+    { icon: PiFacebookLogo, href: "https://www.facebook.com/pages/Prettify-Go-Global/102843534769490/?_rdr" },
+    { icon: PiInstagramLogo, href: "https://www.instagram.com/prettify.go.global/" },
+    { icon: PiLinkedinLogo, href: "https://www.linkedin.com/company/prettify-go-global/" },
     { icon: PiTwitterLogo, href: "#" },
   ];
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (email) {
-      // Here you would typically make an API call to your backend
       setSubscriptionStatus("success");
       setEmail("");
       setTimeout(() => setSubscriptionStatus(""), 3000);
@@ -46,23 +44,23 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-10 md:py-16 md:mt-20 px-6 2xl:w-4/5 md:mx-auto md:px-16">
+    <footer className="pt-10 md:pt-16 px-6 2xl:w-4/5 md:mx-auto md:px-16 bg-white">
       <Separator className="mb-12" />
       <div className="mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {/* left side */}
+          {/* Left side */}
           <div>
             <h2 className="text-4xl font-bold mb-4">Let&apos;s Talk!</h2>
             <a
-              href="mailto:hi@email.com"
+              href="mailto:contact@prettifygoglobal.com"
               className="text-xl hover:underline inline-block mb-8"
             >
-              hi@email.com
+              contact@prettifygoglobal.com
             </a>
-            <p className="text-gray-600">
-              1233 street, Paris France
+            <p className="text-gray-800">
+             B-209, Block D, Tekhand, Okhla Phase I, Okhla Industrial Estate,
               <br />
-              Paris France 1234
+               New Delhi, Delhi 110020
             </p>
           </div>
 
@@ -73,7 +71,7 @@ const Footer = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block text-[#7b7b7b] hover:underline"
+                  className="block text-[#000000] hover:underline"
                 >
                   {link.name}
                 </a>
@@ -84,7 +82,7 @@ const Footer = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block text-[#7b7b7b] hover:underline"
+                  className="block text-[#000000] hover:underline"
                 >
                   {link.name}
                 </a>
@@ -110,8 +108,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-2 w-full bg-black
-                   text-white px-4 py-2  hover:bg-gray-800 transition-colors duration-200"
+                  className="mt-2 w-full bg-black text-white px-4 py-2 hover:bg-gray-800 transition-colors duration-200"
                 >
                   Subscribe
                 </button>
@@ -123,18 +120,29 @@ const Footer = () => {
           </div>
         </div>
 
-          {/* Bottom section */}
-          <div
-          className="flex flex-col md:flex-row 
-        justify-between items-start md:items-center pt-8 border-t border-gray-200"
-        >
+        {/* Google Map Section */}
+        <div className="overflow-hidden rounded-2xl shadow-lg mt-8 h-[220px] md:h-[280px] w-full">
+          <iframe
+            title="Prettify Go Global Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5781911107883!2d77.2848972!3d28.5223359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce14ceae47283%3A0x888fc0a4b54d4ee!2sPrettify%20Go%20Global!5e0!3m2!1sen!2sin!4v1753700686581!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-3 mt-8 border-t border-gray-300 bg-gray-50 px-2 md:px-4 py-6 rounded-xl shadow-inner">
           {/* Legal links */}
           <div className="flex gap-6 mb-4 md:mb-0">
             {legalLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[#7b7b7b] hover:underline text-sm"
+                className="text-black hover:underline hover:text-blue-600 text-sm"
               >
                 {link.name}
               </a>
@@ -149,7 +157,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={link.href}
-                  className="text-[#7b7b7b] hover:text-gray-900"
+                  className="text-black hover:text-blue-600"
                 >
                   <Icon size={20} />
                 </a>
@@ -158,10 +166,10 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="text-[#7b7b7b] text-sm">© 2025 Epic Labs, Inc</div>
+          <div className="text-black text-sm text-center md:text-right">
+            © 2025 Prettify Go Global. All rights reserved.
+          </div>
         </div>
-
-
       </div>
     </footer>
   );

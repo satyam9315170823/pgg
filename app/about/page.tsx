@@ -1,3 +1,4 @@
+import Footer from "../footer";
 import Navbar from "../navbar";
 import Culture from "./culture";
 import Team from "./team";
@@ -25,6 +26,7 @@ const About = () => {
 
       <Culture />
       <Team />
+      <Footer/>
     </div>
   );
 };
