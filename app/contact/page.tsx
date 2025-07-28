@@ -221,7 +221,7 @@ const ContactSection = () => {
                       <div>
                         <span className="text-gray-300 text-sm">Address:</span>
                         <p className="font-medium text-white leading-relaxed group-hover/contact:text-purple-300 transition-colors duration-300">
-                          B-209, Block D, Tekhand, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020
+                          B-209, Block D,Tekhand, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020
                         </p>
                       </div>
                     </div>
