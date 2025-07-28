@@ -52,207 +52,215 @@ const Hero = () => {
   const [activeTab, setActiveTab] = useState<TabId>("projects");
   const [activeCategory, setActiveCategory] = useState<CategoryId>("all");
 
-  const clients: Client[] = [
-    {
-      id: 1,
-      name: "Redbull",
-      image: "logo-1.svg",
-      description:
-        "Redbull is a global leader in the energy drink industry, with a focus on extreme sports and entertainment. We worked with Redbull to develop a new brand identity and marketing strategy.",
-      category: "branding",
-    },
-    {
-      id: 2,
-      name: "Salesforce",
-      image: "logo-2.svg",
-      description:
-        "Salesforce is a leading customer relationship management platform, with a focus on cloud-based solutions. We collaborated with Salesforce to develop a new digital platform for their e-commerce business.",
-      category: "development",
-    },
-    {
-      id: 3,
-      name: "Microsoft",
-      image: "logo-3.svg",
-      description:
-        "Microsoft is a global leader in software and technology, with a focus on innovation and accessibility. We worked with Microsoft to develop a new digital platform for their e-commerce business.",
-      category: "uxui",
-    },
-    {
-      id: 4,
-      name: "Spotify",
-      image: "logo-4.svg",
-      description:
-        "Spotify is a leading music streaming service, with a focus on user experience and data analytics. We collaborated with Spotify to develop a new brand identity and marketing strategy.",
-      category: "branding",
-    },
-    {
-      id: 5,
-      name: "Lyft",
-      image: "logo-5.svg",
-      description:
-        "Lyft is a leading ride-sharing service, with a focus on user experience and accessibility. We collaborated with Lyft to develop a new digital platform for their e-commerce business.",
-      category: "development",
-    },
-    {
-      id: 6,
-      name: "Coca-Cola",
-      image: "logo-6.svg",
-      description:
-        "Coca-Cola is a global leader in the beverage industry, with a focus on sustainability and social responsibility. We worked with Coca-Cola to develop a new digital platform for their e-commerce business.",
-      category: "uxui",
-    },
-    {
-      id: 7,
-      name: "Under Armour",
-      image: "logo-7.svg",
-      description:
-        "Under Armour is a leading sports apparel brand, with a focus on innovation and performance. We collaborated with Under Armour to develop a new brand identity and marketing strategy.",
-      category: "uxui",
-    },
-    {
-      id: 8,
-      name: "Slack",
-      image: "logo-1.svg",
-      description:
-        "Slack is a leading team collaboration platform, with a focus on user experience and accessibility. We collaborated with Slack to develop a new digital platform for their e-commerce business.",
-      category: "analytics",
-    },
-    {
-      id: 9,
-      name: "LinkedIn",
-      image: "logo-2.svg",
-      description:
-        "LinkedIn is a leading professional networking platform, with a focus on user experience and data analytics. We collaborated with LinkedIn to develop a new brand identity and marketing strategy.",
-      category: "marketing",
-    },
-    {
-      id: 10,
-      name: "Figma",
-      image: "logo-3.svg",
-      description:
-        "Partnered with Audi to develop a research framework for their autonomous driving initiative, focusing on user acceptance and adoption.",
-      category: "research",
-    },
-    {
-      id: 11,
-      name: "Sony",
-      image: "logo-4.svg",
-      description:
-        "Sony is a great client of ours. We have worked with them on a number of projects, including the development of a new digital platform for their e-commerce business.",
-      category: "strategy",
-    },
-  ];
+  // Wrap clients in useMemo
+  const clients: Client[] = useMemo(
+    () => [
+      {
+        id: 1,
+        name: "Redbull",
+        image: "logo-1.svg",
+        description:
+          "Redbull is a global leader in the energy drink industry, with a focus on extreme sports and entertainment. We worked with Redbull to develop a new brand identity and marketing strategy.",
+        category: "branding",
+      },
+      {
+        id: 2,
+        name: "Salesforce",
+        image: "logo-2.svg",
+        description:
+          "Salesforce is a leading customer relationship management platform, with a focus on cloud-based solutions. We collaborated with Salesforce to develop a new digital platform for their e-commerce business.",
+        category: "development",
+      },
+      {
+        id: 3,
+        name: "Microsoft",
+        image: "logo-3.svg",
+        description:
+          "Microsoft is a global leader in software and technology, with a focus on innovation and accessibility. We worked with Microsoft to develop a new digital platform for their e-commerce business.",
+        category: "uxui",
+      },
+      {
+        id: 4,
+        name: "Spotify",
+        image: "logo-4.svg",
+        description:
+          "Spotify is a leading music streaming service, with a focus on user experience and data analytics. We collaborated with Spotify to develop a new brand identity and marketing strategy.",
+        category: "branding",
+      },
+      {
+        id: 5,
+        name: "Lyft",
+        image: "logo-5.svg",
+        description:
+          "Lyft is a leading ride-sharing service, with a focus on user experience and accessibility. We collaborated with Lyft to develop a new digital platform for their e-commerce business.",
+        category: "development",
+      },
+      {
+        id: 6,
+        name: "Coca-Cola",
+        image: "logo-6.svg",
+        description:
+          "Coca-Cola is a global leader in the beverage industry, with a focus on sustainability and social responsibility. We worked with Coca-Cola to develop a new digital platform for their e-commerce business.",
+        category: "uxui",
+      },
+      {
+        id: 7,
+        name: "Under Armour",
+        image: "logo-7.svg",
+        description:
+          "Under Armour is a leading sports apparel brand, with a focus on innovation and performance. We collaborated with Under Armour to develop a new brand identity and marketing strategy.",
+        category: "uxui",
+      },
+      {
+        id: 8,
+        name: "Slack",
+        image: "logo-1.svg",
+        description:
+          "Slack is a leading team collaboration platform, with a focus on user experience and accessibility. We collaborated with Slack to develop a new digital platform for their e-commerce business.",
+        category: "analytics",
+      },
+      {
+        id: 9,
+        name: "LinkedIn",
+        image: "logo-2.svg",
+        description:
+          "LinkedIn is a leading professional networking platform, with a focus on user experience and data analytics. We collaborated with LinkedIn to develop a new brand identity and marketing strategy.",
+        category: "marketing",
+      },
+      {
+        id: 10,
+        name: "Figma",
+        image: "logo-3.svg",
+        description:
+          "Partnered with Audi to develop a research framework for their autonomous driving initiative, focusing on user acceptance and adoption.",
+        category: "research",
+      },
+      {
+        id: 11,
+        name: "Sony",
+        image: "logo-4.svg",
+        description:
+          "Sony is a great client of ours. We have worked with them on a number of projects, including the development of a new digital platform for their e-commerce business.",
+        category: "strategy",
+      },
+    ],
+    []
+  ); // Empty dependency array means this array is created only once
 
-  const projects: Project[] = [
-    {
-      id: 1,
-      name: "Sony",
-      video:
-        "https://videos.pexels.com/video-files/6572598/6572598-hd_1920_1080_25fps.mp4",
-      title: "Innovating the future of entertainment",
-      description:
-        "Partnered with sony to introduce a new line of cameras, focusing on user experience and accessibility. And shot this promo video.",
-      category: "branding",
-      size: "col-span-12 md:col-span-4 row-span-1",
-      imageHeight: "h-80",
-    },
-    {
-      id: 2,
-      name: "Adidas",
-      video:
-        "https://videos.pexels.com/video-files/4126123/4126123-uhd_2732_1440_25fps.mp4",
-      title: "Innovation meets sustainability",
-      description:
-        "Until now, Qwant has been the search engine that knows nothing about you—and that hasn't changed. But there are some new developments.",
-      category: "development",
-      size: " col-span-12 md:col-span-4",
-      imageHeight: "h-48",
-    },
-    {
-      id: 3,
-      name: "Tokyo Roast",
-      video:
-        "https://videos.pexels.com/video-files/2909914/2909914-uhd_2732_1440_24fps.mp4",
-      title: "Craftsmanship in every cup",
-      description:
-        "Primary designs innovative, patient-centered medical offices. We crafted a brand for them that is as warm as it is modern, seamlessly bridging the gap between in-person and digital experiences.",
-      category: "uxui",
-      size: "col-span-12 md:col-span-4",
-      imageHeight: "h-48",
-    },
-    {
-      id: 4,
-      name: "Spotify",
-      video:
-        "https://videos.pexels.com/video-files/5077471/5077471-uhd_1440_2732_25fps.mp4",
-      title: "Music streaming reimagined",
-      description:
-        "Spotify is a leading music streaming service, with a focus on user experience and data analytics. We collaborated with Spotify to develop a new brand identity and marketing strategy.",
-      category: "strategy",
-      size: "col-span-12 row-span-2",
-      imageHeight: "h-[600px]",
-    },
-    {
-      id: 5,
-      name: "Ecomworld",
-      video:
-        "https://videos.pexels.com/video-files/5585939/5585939-hd_1920_1080_25fps.mp4",
-      title: "All-in-one ecommerce platform",
-      description:
-        "Ecomworld is an all in one platform for ecommerce businesses to set up their own storefronts. We build out the back-end technology to make it extremely scalable.",
-      category: "branding",
-      size: "col-span-12 md:col-span-6 row-span-1",
-      imageHeight: "h-80",
-    },
-    {
-      id: 6,
-      name: "Toyota",
-      video:
-        "https://videos.pexels.com/video-files/4419251/4419251-hd_1920_1080_25fps.mp4",
-      title: "Driving innovation forward",
-      description:
-        "Toyota is a global leader in the automotive industry, with a focus on innovation and sustainability. We worked with Toyota to develop a new digital platform for their e-commerce business.",
-      category: "uxui",
-      size: "col-span-12 md:col-span-6 row-span-1",
-      imageHeight: "h-80",
-    },
-    {
-      id: 7,
-      name: "Visa",
-      video:
-        "https://videos.pexels.com/video-files/3945147/3945147-uhd_2732_1440_25fps.mp4",
-      title: "Digital wallet experience",
-      description:
-        "Partnered with Visa to design a new digital wallet experience, focusing on user-centered design and accessibility.",
-      category: "strategy",
-      size: "col-span-12 md:col-span-3 row-span-1",
-      imageHeight: "h-44",
-    },
-    {
-      id: 8,
-      name: "Tesla",
-      video:
-        "https://videos.pexels.com/video-files/27421705/12140050_2730_1440_30fps.mp4",
-      title: "Automating the future",
-      description:
-        "Collaborated on enhancing Tesla's data analytics dashboard, providing deeper insights into user listening patterns and preferences.",
-      category: "analytics",
-      size: "col-span-12 md:col-span-3 row-span-1",
-      imageHeight: "h-44",
-    },
-    {
-      id: 9,
-      name: "Nike",
-      video:
-        "https://videos.pexels.com/video-files/8533114/8533114-uhd_2560_1440_25fps.mp4",
-      title: "Steps Towards Sustainability",
-      description:
-        "Developing a marketing campaign that brings Nike's commitment to sustainability to the forefront of their brand narrative.",
-      category: "marketing",
-      size: "col-span-12 md:col-span-6 row-span-2",
-      imageHeight: "h-96",
-    },
-  ];
+  // Wrap projects in useMemo
+  const projects: Project[] = useMemo(
+    () => [
+      {
+        id: 1,
+        name: "Sony",
+        video:
+          "https://videos.pexels.com/video-files/6572598/6572598-hd_1920_1080_25fps.mp4",
+        title: "Innovating the future of entertainment",
+        description:
+          "Partnered with sony to introduce a new line of cameras, focusing on user experience and accessibility. And shot this promo video.",
+        category: "branding",
+        size: "col-span-12 md:col-span-4 row-span-1",
+        imageHeight: "h-80",
+      },
+      {
+        id: 2,
+        name: "Adidas",
+        video:
+          "https://videos.pexels.com/video-files/4126123/4126123-uhd_2732_1440_25fps.mp4",
+        title: "Innovation meets sustainability",
+        description:
+          "Until now, Qwant has been the search engine that knows nothing about you—and that hasn't changed. But there are some new developments.",
+        category: "development",
+        size: " col-span-12 md:col-span-4",
+        imageHeight: "h-48",
+      },
+      {
+        id: 3,
+        name: "Tokyo Roast",
+        video:
+          "https://videos.pexels.com/video-files/2909914/2909914-uhd_2732_1440_24fps.mp4",
+        title: "Craftsmanship in every cup",
+        description:
+          "Primary designs innovative, patient-centered medical offices. We crafted a brand for them that is as warm as it is modern, seamlessly bridging the gap between in-person and digital experiences.",
+        category: "uxui",
+        size: "col-span-12 md:col-span-4",
+        imageHeight: "h-48",
+      },
+      {
+        id: 4,
+        name: "Spotify",
+        video:
+          "https://videos.pexels.com/video-files/5077471/5077471-uhd_1440_2732_25fps.mp4",
+        title: "Music streaming reimagined",
+        description:
+          "Spotify is a leading music streaming service, with a focus on user experience and data analytics. We collaborated with Spotify to develop a new brand identity and marketing strategy.",
+        category: "strategy",
+        size: "col-span-12 row-span-2",
+        imageHeight: "h-[600px]",
+      },
+      {
+        id: 5,
+        name: "Ecomworld",
+        video:
+          "https://videos.pexels.com/video-files/5585939/5585939-hd_1920_1080_25fps.mp4",
+        title: "All-in-one ecommerce platform",
+        description:
+          "Ecomworld is an all in one platform for ecommerce businesses to set up their own storefronts. We build out the back-end technology to make it extremely scalable.",
+        category: "branding",
+        size: "col-span-12 md:col-span-6 row-span-1",
+        imageHeight: "h-80",
+      },
+      {
+        id: 6,
+        name: "Toyota",
+        video:
+          "https://videos.pexels.com/video-files/4419251/4419251-hd_1920_1080_25fps.mp4",
+        title: "Driving innovation forward",
+        description:
+          "Toyota is a global leader in the automotive industry, with a focus on innovation and sustainability. We worked with Toyota to develop a new digital platform for their e-commerce business.",
+        category: "uxui",
+        size: "col-span-12 md:col-span-6 row-span-1",
+        imageHeight: "h-80",
+      },
+      {
+        id: 7,
+        name: "Visa",
+        video:
+          "https://videos.pexels.com/video-files/3945147/3945147-uhd_2732_1440_25fps.mp4",
+        title: "Digital wallet experience",
+        description:
+          "Partnered with Visa to design a new digital wallet experience, focusing on user-centered design and accessibility.",
+        category: "strategy",
+        size: "col-span-12 md:col-span-3 row-span-1",
+        imageHeight: "h-44",
+      },
+      {
+        id: 8,
+        name: "Tesla",
+        video:
+          "https://videos.pexels.com/video-files/27421705/12140050_2730_1440_30fps.mp4",
+        title: "Automating the future",
+        description:
+          "Collaborated on enhancing Tesla's data analytics dashboard, providing deeper insights into user listening patterns and preferences.",
+        category: "analytics",
+        size: "col-span-12 md:col-span-3 row-span-1",
+        imageHeight: "h-44",
+      },
+      {
+        id: 9,
+        name: "Nike",
+        video:
+          "https://videos.pexels.com/video-files/8533114/8533114-uhd_2560_1440_25fps.mp4",
+        title: "Steps Towards Sustainability",
+        description:
+          "Developing a marketing campaign that brings Nike's commitment to sustainability to the forefront of their brand narrative.",
+        category: "marketing",
+        size: "col-span-12 md:col-span-6 row-span-2",
+        imageHeight: "h-96",
+      },
+    ],
+    []
+  ); // Empty dependency array means this array is created only once
 
   const { tabCounts, categoryCounts } = useMemo(() => {
     const projectCount = projects.length;
@@ -297,7 +305,7 @@ const Hero = () => {
       } as TabCounts,
       categoryCounts: categoryCount,
     };
-  }, []);
+  }, [clients, projects]); // Now 'clients' and 'projects' are memoized themselves, so this is correct.
 
   const tabs = [
     { id: "projects" as const, name: "Projects", count: tabCounts.projects },
@@ -448,8 +456,8 @@ const Hero = () => {
   return (
     <div
       className="
-    md:mx-auto   
-     2xl:w-4/5 md:px-16
+    md:mx-auto  
+      2xl:w-4/5 md:px-16
 
     
     px-6 py-40 "

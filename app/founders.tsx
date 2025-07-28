@@ -184,7 +184,7 @@ const Founders = () => {
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
-      }, [founders.length]);
+      }, []);
 
 
       const next = () => {
