@@ -108,8 +108,8 @@ const teamMembers: Omit<TeamMemberProps, "index">[] = [
     description:
       "Preeti Dhingra brings 25+ years of leadership in corporate strategy and global expansion. Her vision drives our mission forward.",
     social: {
-      linkedin: "https://linkedin.com/in/rohitmalhotra",
-      twitter: "https://twitter.com/rohitmalhotra",
+      linkedin: "https://www.linkedin.com/in/preeti-dhingra-963265284/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in",
+      twitter: "https://twitter.com",
     },
   },
   {
@@ -120,7 +120,7 @@ const teamMembers: Omit<TeamMemberProps, "index">[] = [
     description:
       "Vidit oversees our creative direction and operations. With a background in marketing, he ensures exceptional delivery.",
     social: {
-      linkedin: "https://linkedin.com/in/priyak",
+      linkedin: "https://www.linkedin.com/company/prettify-go-global/",
     },
   },
 ];
