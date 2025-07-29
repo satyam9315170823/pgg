@@ -89,7 +89,7 @@ const Pricing = () => {
   return (
     <div className="w-full py-5 mt-8 bg-white antialiased relative overflow-hidden">
       <div className="flex items-center justify-center flex-col">
-        <div className="text-5xl pb-10 md:pb-20 text-center text-blue-500 font-semibold px-6">
+        <div className=" text-3xl md:text-5xl pb-10 md:pb-20 text-center text-blue-500 font-semibold px-6">
           Transparent Pricing <br /> Pick the Right Plan for Your Brand
         </div>
         <div className="grid md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-20 items-start">
