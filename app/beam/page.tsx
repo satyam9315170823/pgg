@@ -10,7 +10,7 @@ const Beam = () => {
   return (
     <div>
          <Element name="process">
-        <main className="md:px-0 mx-6 md:mx-auto">
+        <main className="max-w-screen overflow-x-hidden md:px-0 mx-6 md:mx-auto">
         <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
         Our{" "}
             <span className="text-blue-500 flex gap-x-1 items-center">
