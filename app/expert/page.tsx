@@ -25,7 +25,7 @@ const WebsiteDesign = () => {
         </p>
       </div>
 
-      <BentoGrid className="max-w-4xl mx-2">
+      <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
