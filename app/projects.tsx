@@ -12,7 +12,7 @@ const projects = [
     logo: "/adidas-logo.png",
     description: "Back-to-school global campaign.",
     detail:
-      "use client developed Adidas’ global campaign strategy and visuals for their Back-to-School season, including digital banners, motion graphics, and campaign microsites targeted at teens and parents across multiple markets.",
+      " developed Adidas’ global campaign strategy and visuals for their Back-to-School season, including digital banners, motion graphics, and campaign microsites targeted at teens and parents across multiple markets.",
     className: "",
     tags: ["Campaign", "Visual Design", "Motion Graphics"],
   },
@@ -22,7 +22,7 @@ const projects = [
     logo: "/airbnb-logo.png",
     description: "High-converting landing experience.",
     detail:
-      "use client created a fully responsive and A/B tested landing page for Airbnb’s city host program, which increased user sign-ups by 34% and improved engagement through interactive UI elements.",
+      " created a fully responsive and A/B tested landing page for Airbnb’s city host program, which increased user sign-ups by 34% and improved engagement through interactive UI elements.",
     className: "",
     tags: ["Landing Page", "A/B Testing", "Responsive Design"],
   },
@@ -32,7 +32,7 @@ const projects = [
     logo: "/audi-logo.png",
     description: "Interactive car configurator.",
     detail:
-      "use client engineered an interactive and 3D-enabled car configurator platform for Audi, allowing users to explore car features, colors, and trims in real-time with seamless mobile compatibility.",
+      " engineered an interactive and 3D-enabled car configurator platform for Audi, allowing users to explore car features, colors, and trims in real-time with seamless mobile compatibility.",
     className: "",
     tags: ["3D UX", "Product Visualization", "Web App"],
   },
@@ -42,7 +42,7 @@ const projects = [
     logo: "/paypal-logo.png",
     description: "Custom payment integration.",
     detail:
-      "use client integrated custom PayPal checkout and invoicing APIs for multiple e-commerce clients, enhancing their payment workflows and ensuring compliance with global security standards.",
+      " integrated custom PayPal checkout and invoicing APIs for multiple e-commerce clients, enhancing their payment workflows and ensuring compliance with global security standards.",
     className: "",
     tags: ["API Integration", "E-commerce", "Secure Payments"],
   },
@@ -52,7 +52,7 @@ const projects = [
     logo: "/sony-logo.png",
     description: "PlayStation marketing microsite.",
     detail:
-      "use client crafted a vibrant, animated marketing microsite for Sony PlayStation’s new game releases, highlighting gameplay trailers, countdown timers, and newsletter signup features.",
+      "crafted a vibrant, animated marketing microsite for Sony PlayStation’s new game releases, highlighting gameplay trailers, countdown timers, and newsletter signup features.",
     className: "",
     tags: ["Microsite", "Animation", "Gaming"],
   },
@@ -62,7 +62,7 @@ const projects = [
     logo: "/under-armour-logo.png",
     description: "Fitness tracking app UI/UX.",
     detail:
-      "use client designed the complete UI/UX for Under Armour’s fitness tracking app, including user flow mapping, interactive prototypes, and light/dark mode support for iOS and Android.",
+      " designed the complete UI/UX for Under Armour’s fitness tracking app, including user flow mapping, interactive prototypes, and light/dark mode support for iOS and Android.",
     className: "",
     tags: ["Mobile App", "UX Design", "iOS/Android"],
   },
@@ -72,7 +72,7 @@ const projects = [
     logo: "/redbull-logo.png",
     description: "Global energy campaign launch.",
     detail:
-      "use client led the launch of Redbull’s global energy drink campaign by designing motion graphics ads, influencer outreach plans, and website engagement tools that reached 10M+ users.",
+      " led the launch of Redbull’s global energy drink campaign by designing motion graphics ads, influencer outreach plans, and website engagement tools that reached 10M+ users.",
     className: "",
     tags: ["Campaign", "Influencer Marketing", "Motion Ads"],
   },
@@ -82,7 +82,7 @@ const projects = [
     logo: "/spalding-logo.png",
     description: "Official basketball platform.",
     detail:
-      "use client built Spalding’s official online platform showcasing basketball products, 3D previews, and athlete endorsements, boosting online sales by 47% in the first quarter post-launch.",
+      "built Spalding’s official online platform showcasing basketball products, 3D previews, and athlete endorsements, boosting online sales by 47% in the first quarter post-launch.",
     className: "",
     tags: ["E-commerce", "3D Display", "Brand Integration"],
   },
@@ -92,7 +92,7 @@ const projects = [
     logo: "/visa-logo.png",
     description: "Seamless payment UI design.",
     detail:
-      "use client collaborated with Visa to redesign their mobile payment interface, focusing on accessibility, speed, and user trust with secure transaction visual cues and biometric integrations.",
+      "collaborated with Visa to redesign their mobile payment interface, focusing on accessibility, speed, and user trust with secure transaction visual cues and biometric integrations.",
     className: "",
     tags: ["UI Design", "Accessibility", "Fintech"],
   },
@@ -102,7 +102,7 @@ const projects = [
     logo: "/nord-logo.png",
     description: "E-commerce experience design.",
     detail:
-      "use client redesigned Nordstrom’s shopping journey, optimizing for mobile and desktop responsiveness, adding personalized recommendation engines, and integrating smooth multi-cart workflows.",
+      "redesigned Nordstrom’s shopping journey, optimizing for mobile and desktop responsiveness, adding personalized recommendation engines, and integrating smooth multi-cart workflows.",
     className: "",
     tags: ["UX Optimization", "Personalization", "Retail"],
   },
@@ -112,7 +112,7 @@ const projects = [
     logo: "/zara-logo.png",
     description: "Seasonal fashion launch.",
     detail:
-      "use client developed and launched Zara’s seasonal fashion campaign microsite with animated lookbooks, influencer stories, and integrated shop-the-look features for seamless conversions.",
+      "developed and launched Zara’s seasonal fashion campaign microsite with animated lookbooks, influencer stories, and integrated shop-the-look features for seamless conversions.",
     className: "",
     tags: ["Fashion", "Campaign", "Interactive UI"],
   },
