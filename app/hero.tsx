@@ -1,5 +1,5 @@
 'use client'
-
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, easeOut } from "framer-motion";
 import Link from "next/link";
@@ -91,14 +91,25 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center">
       {/* Main Content Section */}
+      
       <motion.div
-        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-40 bg-white"
+        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-40 bg-black"
         initial={hasAnimated ? "visible" : "hidden"}
         animate="visible"
         variants={contentVariants}
       >
+
         <div className="md:max-w-3xl text-center px-4">
-         
+         <div className="mb-6">
+  <Image
+    src="/logoMain.svg"
+    alt="Logo"
+    width={90} // adjust size as needed
+    height={90}
+    className="mx-auto"
+  />
+</div>
+
   <motion.h1
   variants={contentVariants}
   className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight transition-transform duration-300 hover:scale-105 hover:text-[#1D4ED8]"

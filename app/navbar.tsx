@@ -88,7 +88,7 @@ const Navbar = () => {
     <AnimatePresence>
       <motion.nav
         key="navbar"
-        className="fixed top-0 left-0 right-0 bg-white z-50 py-4 px-6 md:px-10 border-b"
+        className="fixed top-0 text-white left-0 right-0 bg-black z-50 py-4 px-6 md:px-10 "
         initial="initial"
         animate={isVisible ? "visible" : "hidden"}
         variants={navbarVariants}
@@ -112,7 +112,7 @@ const Navbar = () => {
       href={link.href}
       key={link.href}
       className={`${
-        pathname === link.href ? "text-blue-600 font-bold" : "text-black font-bold"
+        pathname === link.href ? "text-blue-600 font-bold" : "text-white font-bold"
       } hover:text-blue-600 transition-colors duration-200`}
     >
       {link.label}
