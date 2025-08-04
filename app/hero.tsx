@@ -126,14 +126,14 @@ const Hero = () => {
   >
     <motion.span
       variants={contentVariants}
-      className="inline-block text-[#553c84] neon-glow-dark animate-glow-pulse"
+      className="inline-block text-[#291947] neon-glow-dark animate-glow-pulse"
     >
       Prettify Go Global
     </motion.span>
   </motion.h1>
 
   <motion.span
-    className="mt-3 inline-block text-xl md:text-2xl font-medium text-gray-500 transition-transform duration-300 hover:scale-105 hover:text-[#5f4699]"
+    className="mt-3 inline-block text-xl md:text-2xl font-medium text-gray-900 transition-transform duration-300 hover:scale-105 hover:text-[#7960b3]"
     variants={contentVariants}
   >
     Scale your business with confidence
@@ -144,7 +144,7 @@ const Hero = () => {
 
 <motion.p
   variants={contentVariants}
-  className="text-base md:text-lg text-gray-600 font-normal max-w-2xl mx-auto mb-10 leading-relaxed"
+  className="text-base md:text-lg text-gray-900 font-normal max-w-2xl mx-auto mb-10 leading-relaxed"
 >
   Empowering brands with strategic PR and bold storytelling.
   <br className="hidden md:block" />
@@ -161,7 +161,7 @@ const Hero = () => {
   {/* Button 1: Book a Call */}
   <Link
     href={"/book"}
-    className="bg-[#4a2783] text-white px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium transition-all duration-300 shadow-md hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),
+    className="bg-[#311f4e] text-white px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium transition-all duration-300 shadow-md hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),
     5px_5px_0px_0px_rgba(255,255,255)] hover:bg-[#abcbff] hover:text-black"
   >
     Book a Meeting

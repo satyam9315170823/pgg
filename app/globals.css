@@ -88,7 +88,7 @@ body {
 
 
 .neon-glow-dark {
-  color: #34466e;
+  color: #06173b;
   text-shadow:
     0 0 2px #2ca947,
     0 0 4px #50406d,
@@ -113,7 +113,7 @@ body {
 }
 
 .neon-glow-dark:hover {
-  color: #1c4f34;
+  color: #4d4e50;
   text-shadow:
     0 0 3px #3ce21f,
     0 0 6px #5125a4,
