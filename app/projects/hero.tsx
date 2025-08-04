@@ -440,7 +440,7 @@ const Hero = () => {
                       </video>
                     </div>
                     <h3 className="text-sm font-bold mb-2 text-gray-600">
-                      / {project.name}
+                       {project.name}
                     </h3>
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                     <p className="text-gray-600">{project.description}</p>

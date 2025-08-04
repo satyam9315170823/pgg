@@ -119,7 +119,7 @@ const Services = () => {
 
       <div className="md:py-20 px-6 mx-auto 2xl:w-4/5 md:px-16">
         <h2 className="text-xl font-bold text-[#7b7b7b] mb-10">
-          / Our Services
+           Our Services
         </h2>
 
         <div className="space-y-16 md:space-y-32">
@@ -151,7 +151,7 @@ const Services = () => {
                       className="flex items-center space-x-2"
                       key={benefitIndex}
                     >
-                      <span className="text-[#7b7b7b]">/ {benefit}</span>
+                      <span className="text-[#7b7b7b]"> {benefit}</span>
                     </div>
                   ))}
                 </div>

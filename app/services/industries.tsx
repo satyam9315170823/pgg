@@ -125,7 +125,7 @@ const Industries = () => {
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                 {/* Title Column - 4 columns wide */}
                 <div className="md:col-span-4">
-                  <h2 className="text-2xl font-semibold">{industry.title} \</h2>
+                  <h2 className="text-2xl font-semibold">{industry.title} </h2>
                 </div>
 
                 {/* Description Column - 4 columns wide */}

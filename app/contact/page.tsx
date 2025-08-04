@@ -195,7 +195,8 @@ const ContactSection = () => {
                       </div>
                       <div>
                         <span className="text-gray-300 text-sm">Phone:</span>
-                        <div className="font-bold text-lg text-white group-hover/contact:text-green-300 transition-colors duration-300">+91 93159 72991</div>
+                        <div className="font-bold text-lg text-white group-hover/contact:text-green-300 transition-colors duration-300">+91 98106 22349
+</div>
                       </div>
                     </div>
 
@@ -206,10 +207,10 @@ const ContactSection = () => {
                       <div>
                         <span className="text-gray-300 text-sm">Email:</span>
                         <a
-                          href="mailto:info@prettifyglobal.com"
+                          href="info.prettifygoglobal@gmail.com"
                           className="block font-bold text-lg text-blue-400 hover:text-blue-300 transition-colors duration-300"
                         >
-                          info@prettifyglobal.com
+                         info.prettifygoglobal@gmail.com
                         </a>
                       </div>
                     </div>
@@ -221,7 +222,8 @@ const ContactSection = () => {
                       <div>
                         <span className="text-gray-300 text-sm">Address:</span>
                         <p className="font-medium text-white leading-relaxed group-hover/contact:text-purple-300 transition-colors duration-300">
-                          B-209, Block D,Tekhand, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020
+                          Office No: 1904, 19th Floor, The Binary by OMNIYAT,
+Business Bay, Dubai, U.A.E.
                         </p>
                       </div>
                     </div>
