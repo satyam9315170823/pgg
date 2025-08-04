@@ -88,7 +88,11 @@ const Navbar = () => {
     <AnimatePresence>
       <motion.nav
         key="navbar"
+<<<<<<< HEAD
         className="fixed top-0 left-0 right-0 bg-white z-50 py-4 px-6 md:px-10 border-b"
+=======
+        className="fixed top-0 text-black left-0 right-0 bg-black z-50 py-4 px-6 md:px-10 "
+>>>>>>> 2bf024c792a9ed56ff2a0830a46000a762968b65
         initial="initial"
         animate={isVisible ? "visible" : "hidden"}
         variants={navbarVariants}
