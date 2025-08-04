@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: rgb(0,0,0.95);
+  
 }
 
 @layer base {
@@ -84,4 +84,38 @@ body {
 .animate-scroll {
   animation: scroll var(--animation-duration, 100s) linear infinite;
   animation-direction: var(--animation-direction, forwards);
+}
+
+
+.neon-glow-dark {
+  color: #34466e;
+  text-shadow:
+    0 0 2px #2ca947,
+    0 0 4px #50406d,
+    0 0 6px #27b3a9;
+  animation: glowPulse 2.5s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 2px #2ca947,
+      0 0 4px #50406d,
+      0 0 6px #27b3a9;
+  }
+  50% {
+    text-shadow:
+      0 0 3px #2be076,
+      0 0 6px #3c3a4d,
+      0 0 8px #41c315;
+  }
+}
+
+.neon-glow-dark:hover {
+  color: #1c4f34;
+  text-shadow:
+    0 0 3px #3ce21f,
+    0 0 6px #5125a4,
+    0 0 8px #8c8892;
 }

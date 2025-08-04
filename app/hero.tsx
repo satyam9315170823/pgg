@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image";
+
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, easeOut } from "framer-motion";
 import Link from "next/link";
@@ -91,25 +91,14 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center">
       {/* Main Content Section */}
-      
       <motion.div
-        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-40 bg-black"
+        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-40 bg-white"
         initial={hasAnimated ? "visible" : "hidden"}
         animate="visible"
         variants={contentVariants}
       >
-
         <div className="md:max-w-3xl text-center px-4">
-         <div className="mb-6">
-  <Image
-    src="/logoMain.svg"
-    alt="Logo"
-    width={90} // adjust size as needed
-    height={90}
-    className="mx-auto"
-  />
-</div>
-
+{/*          
   <motion.h1
   variants={contentVariants}
   className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight transition-transform duration-300 hover:scale-105 hover:text-[#1D4ED8]"
@@ -127,16 +116,41 @@ const Hero = () => {
   >
     Scale your business with confidence
   </motion.span>
-</motion.h1>
+</motion.h1> */}
+<motion.div
+  variants={contentVariants}
+  className="flex flex-col items-center justify-center mb-10"
+>
+  <motion.h1
+    className="text-[2.8rem] md:text-[4.5rem] font-extrabold text-center text-[#4f3981] leading-tight tracking-tight transition-transform duration-300 hover:scale-[1.03]"
+  >
+    <motion.span
+      variants={contentVariants}
+      className="inline-block text-[#553c84] neon-glow-dark animate-glow-pulse"
+    >
+      Prettify Go Global
+    </motion.span>
+  </motion.h1>
+
+  <motion.span
+    className="mt-3 inline-block text-xl md:text-2xl font-medium text-gray-500 transition-transform duration-300 hover:scale-105 hover:text-[#5f4699]"
+    variants={contentVariants}
+  >
+    Scale your business with confidence
+  </motion.span>
+</motion.div>
+
+
 
 <motion.p
   variants={contentVariants}
   className="text-base md:text-lg text-gray-600 font-normal max-w-2xl mx-auto mb-10 leading-relaxed"
 >
-  Empowering brands through strategic PR and innovative storytelling.
+  Empowering brands with strategic PR and bold storytelling.
   <br className="hidden md:block" />
-  We amplify your voice and build lasting, impactful connections.
+  We amplify your voice to create lasting impact.
 </motion.p>
+
 
 <motion.div
   variants={buttonVariants}
@@ -147,7 +161,8 @@ const Hero = () => {
   {/* Button 1: Book a Call */}
   <Link
     href={"/book"}
-    className="bg-[#121212] text-white px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium transition-all duration-300 shadow-md hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] hover:bg-[#abcbff] hover:text-black"
+    className="bg-[#4a2783] text-white px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium transition-all duration-300 shadow-md hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),
+    5px_5px_0px_0px_rgba(255,255,255)] hover:bg-[#abcbff] hover:text-black"
   >
     Book a Meeting
   </Link>

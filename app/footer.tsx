@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-3 mt-8 border-t border-gray-300 bg-gray-50 px-2 md:px-4 py-6 rounded-xl shadow-inner">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-3 mt-2  bg-white px-2 md:px-4 py-6 rounded-xl shadow-inner">
           {/* Legal links */}
           <div className="flex gap-6 mb-4 md:mb-0">
             {legalLinks.map((link) => (
