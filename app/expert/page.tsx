@@ -56,19 +56,20 @@ const items = [
     ),
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
-  {
-    title: "Reputation Management",
-    description: "Protecting and enhancing your brand's public image.",
+ 
+   {
+    title: "Corporate Communications",
+    description: "Aligning internal and external messaging with brand values.",
     header: (
       <Image
-        src="/reputation.webp"
-        alt="Reputation Management"
+        src="/corporate.jpg"
+        alt="Corporate Communications"
         width={500}
-        height={300}
+        height={400}
         className="rounded-xl"
       />
     ),
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Market Research",
@@ -87,7 +88,7 @@ const items = [
   {
     header: (
       <Image
-        src="/seo.png"
+        src="/seo.jpg"
         alt="SEO & Digital PR"
         width={500}
         height={300}
@@ -96,25 +97,25 @@ const items = [
     ),
   },
   {
-    title: "Corporate Communications",
-    description: "Aligning internal and external messaging with brand values.",
+    title: "Reputation Management",
+    description: "",
     header: (
       <Image
-        src="/corporate.jpg"
-        alt="Corporate Communications"
+        src="/reputation.webp"
+        alt="Reputation Management"
         width={500}
         height={300}
         className="rounded-xl"
       />
     ),
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Community Engagement",
     description: "Building strong connections with target audiences online.",
     header: (
       <Image
-        src="/community.jpg"
+        src="/community.png"
         alt="Community Engagement"
         width={500}
         height={300}

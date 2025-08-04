@@ -13,12 +13,13 @@ import Beam from "./beam/page";
 import WebsiteDesign from "./expert/page";
 import Pricing from "./pricing/page";
 import { ScrollBasedVelocityDemo } from "@/components/ui/ScrollBasedVelocityDemo";
+import Founder from "./founders/page";
 
 const Home = () => {
   return ( <div>
  <Navbar />
  <Hero />
- <MidSec/>
+ 
  {/* <Trusted /> */}
  <Projects />
  <Beam/>
@@ -27,11 +28,13 @@ const Home = () => {
         <ScrollBasedVelocityDemo />
       </section>
  <Pricing/>
+<MidSec/>
  <Founders />
 
  <SliderOne/>
  <Statistics />
  <Faq />
+ <Founder/>
  <Footer />
   </div> );
 }

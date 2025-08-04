@@ -92,41 +92,31 @@ const Hero = () => {
     <div className="flex flex-col items-center">
       {/* Main Content Section */}
       <motion.div
-        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-40 bg-white"
+        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-30 bg-white"
         initial={hasAnimated ? "visible" : "hidden"}
         animate="visible"
         variants={contentVariants}
       >
         <div className="md:max-w-3xl text-center px-4">
-{/*          
-  <motion.h1
-  variants={contentVariants}
-  className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight transition-transform duration-300 hover:scale-105 hover:text-[#1D4ED8]"
->
-  <motion.span
-    className=" text-[#2748ed] inline-block transition-transform duration-300 hover:scale-105 hover:text-[#39393a]"
-    variants={contentVariants}
-  >
-    Prettify Go Global
-  </motion.span>
-  <br />
-  <motion.span
-    className="inline-block text-2xl md:text-3xl font-medium text-gray-600 mt-2 transition-transform duration-300 hover:scale-105 hover:text-[#DC2626]"
-    variants={contentVariants}
-  >
-    Scale your business with confidence
-  </motion.span>
-</motion.h1> */}
+
 <motion.div
   variants={contentVariants}
   className="flex flex-col items-center justify-center mb-10"
 >
+   <motion.img
+    src="/logoMain.svg" // Replace with your actual image path
+    alt="Prettify Go Global Logo"
+    className="w-24 h-24 md:w-32 md:h-32 object-contain mb-2"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, ease: [0.25, 0.1, 0, 1] }}
+  />
   <motion.h1
     className="text-[2.8rem] md:text-[4.5rem] font-extrabold text-center text-[#4f3981] leading-tight tracking-tight transition-transform duration-300 hover:scale-[1.03]"
   >
     <motion.span
       variants={contentVariants}
-      className="inline-block text-[#291947] neon-glow-dark animate-glow-pulse"
+      className="inline-block text-[#291947] hover:text-gray-500 "
     >
       Prettify Go Global
     </motion.span>

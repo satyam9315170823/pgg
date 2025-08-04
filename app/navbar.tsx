@@ -102,7 +102,7 @@ const Navbar = () => {
             <span className="text-xl font-bold">Prettify Go Global</span>
           </Link> */}
           <Link href={"/"} className="flex items-center space-x-1">
-  <Image src="/logoMain.svg" alt="Logo" width={38} height={38} />
+  <Image src="/logoMain.svg" alt="Logo" width={42} height={42} />
   <span className="text-xl font-bold">Prettify Go Global</span>
 </Link>
 
