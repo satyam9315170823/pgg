@@ -15,7 +15,7 @@ const founders = [
     instagram: 'https://www.instagram.com/preetidhingra.official?igsh=MWpyYmJjbW9oN3F1Yg==',
   },
   {
-    name: 'Vidit Dhingra',
+    name: 'Vidyit Dhingra',
     title: 'Director',
     image: '/director.jpg',
     description:

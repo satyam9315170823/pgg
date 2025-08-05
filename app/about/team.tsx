@@ -113,7 +113,7 @@ const teamMembers: Omit<TeamMemberProps, "index">[] = [
     },
   },
   {
-    name: "Vidit Dhingra",
+    name: "Vidyit Dhingra",
     role: "Director",
     
     image: director,
@@ -136,7 +136,7 @@ const Team = () => {
           className="mb-16 text-center"
         >
           <p className="text-sm uppercase tracking-widest text-blue-400 mb-2">
-            / Meet the Leadership
+            Meet the Leadership
           </p>
           <h2 className="text-4xl font-bold text-gray-900">
             Our Visionary Team

@@ -106,7 +106,7 @@ const Hero = () => {
    <motion.img
     src="/logoMain.svg" // Replace with your actual image path
     alt="Prettify Go Global Logo"
-    className="w-24 h-24 md:w-32 md:h-32 object-contain mb-2"
+    className="w-40 h-40 md:w-48 md:h-48 object-contain mb-2"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6, ease: [0.25, 0.1, 0, 1] }}

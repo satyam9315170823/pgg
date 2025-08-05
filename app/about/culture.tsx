@@ -67,7 +67,7 @@ const Culture = () => {
           className="mb-16"
         >
           <p className="text-sm uppercase tracking-widest text-blue-500 mb-4">
-            / Culture
+             Culture
           </p>
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Our Core Values
