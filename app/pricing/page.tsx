@@ -29,7 +29,7 @@ const plans = [
     
   ],
   description:
-    "Complete digital marketing solution with AI-powered content creation and social media growth strategy. Ready to scale higher? Check out our Royal Plan for enhanced features and broader impact.",
+    "Complete digital marketing solution with AI-powered content creation and social media growth strategy. Ready to scale higher",
 }
 ,
   {
@@ -75,7 +75,7 @@ const plans = [
     "Comprehensive International Brand Visibility"
   ],
   description:
-    "Tailored solutions for brands ready to dominate globally with advanced AI-powered marketing strategies and dedicated support. Schedule a consultation to discuss your unique requirements.",
+    "Tailored solutions for brands ready to dominate globally with advanced AI-powered marketing strategies and dedicated support"
 }
 ,
 ];
@@ -117,13 +117,13 @@ const Pricing = () => {
     <div className="w-full py-5 mt-8 bg-white antialiased relative overflow-hidden">
       <div className="flex items-center justify-center flex-col">
         <div className="flex flex-col items-center text-center px-6 pb-10 md:pb-20">
-  <h2 className="text-3xl md:text-5xl text-blue-500 font-semibold">
+  <h2 className="text-3xl md:text-5xl text-purple-900 font-semibold">
     Transparent Pricing <br /> Pick the Right Plan for Your Brand
   </h2>
   <a
     href="/brochure.pdf"
     download
-    className="mt-4 inline-block px-6 py-2 text-white rounded-full bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-blue-400 transition"
+    className="mt-4 inline-block px-6 py-2 text-white rounded-full bg-gradient-to-r from-purple-400 to-purple-950 hover:from-blue-600 hover:to-blue-400 transition"
   >
     Download Brochure
   </a>
@@ -133,7 +133,7 @@ const Pricing = () => {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className="h-full flex flex-col justify-between border rounded-3xl px-6 bg-white shadow-md"
+              className="h-full flex flex-col justify-between border rounded-3xl px-6 bg-[#fcf6fcee] shadow-md"
             >
               <div className="rounded-3xl py-10 text-black">
                 <div className="text-4xl font-semibold">{plan.name}</div>
@@ -156,14 +156,14 @@ const Pricing = () => {
   {plan.name === "Enterprise Plan" ? (
     <Link
       href={'/contact'}
-      className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-green-500 to-green-300 hover:from-green-600 hover:to-green-400 transition"
+      className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-orange-500 to-green-300 hover:from-green-600 hover:to-green-400 transition"
     >
       Contact Us
     </Link>
   ) : (
     <button
       onClick={() => loadRazorpay(plan.name, plan.amount)}
-      className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-purple-500 to-blue-300 hover:from-purple-600 hover:to-blue-400 transition"
+      className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-purple-800 to-blue-700 hover:from-purple-600 hover:to-blue-400 transition"
     >
       Buy Now
     </button>
