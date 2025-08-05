@@ -1,5 +1,5 @@
 "use client";
-// import Link from "next/link";
+import Link from "next/link";
 import { PiCheckCircleFill } from "react-icons/pi";
 
 interface RazorpayResponse {
@@ -154,12 +154,12 @@ const Pricing = () => {
 
              <div className="w-full pb-6">
   {plan.name === "Enterprise Plan" ? (
- <a
-  href="mailto:info.prettifygoglobal@gmail.com?subject=Inquiry&body=Hi, I would like to get in touch..."
+ <Link
+  href={'/contact'}
   className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-orange-500 to-green-300 hover:from-green-600 hover:to-green-400 transition"
 >
   Contact Us
-</a>
+</Link>
 
 
   ) : (
