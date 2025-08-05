@@ -49,6 +49,20 @@ export function PlanDetails({ plan, onBuy }: Props) {
             </ul>
           </div>
         ))}
+       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+  <h2 className="font-semibold text-purple-800 text-base sm:text-lg">
+    ➡️ For more information, please download our Brochure..
+  </h2>
+  <a
+    href="/brochure.pdf"
+    download
+    className="mt-2 sm:mt-0 sm:ml-4 px-4 py-2 rounded-full text-white bg-gradient-to-r from-purple-400 to-purple-950 hover:from-blue-600 hover:to-blue-400 transition text-sm sm:text-base"
+  >
+    Download Brochure
+  </a>
+</div>
+
+      
       </div>
 
       <div className="mt-10">
