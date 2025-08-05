@@ -133,7 +133,7 @@ const Pricing = () => {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className="h-full flex flex-col justify-between border rounded-3xl px-6 bg-[#fcf6fcee] shadow-md"
+              className="h-full flex flex-col justify-between border rounded-3xl px-6 bg-white shadow-md"
             >
               <div className="rounded-3xl py-10 text-black">
                 <div className="text-4xl font-semibold">{plan.name}</div>
@@ -154,12 +154,14 @@ const Pricing = () => {
 
              <div className="w-full pb-6">
   {plan.name === "Enterprise Plan" ? (
-    <Link
-      href={'/contact'}
-      className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-orange-500 to-green-300 hover:from-green-600 hover:to-green-400 transition"
-    >
-      Contact Us
-    </Link>
+ <a
+  href="mailto:info.prettifygoglobal@gmail.com?subject=Inquiry&body=Hi, I would like to get in touch..."
+  className="rounded-3xl my-4 py-2 text-white w-full mx-auto flex justify-center bg-gradient-to-r from-orange-500 to-green-300 hover:from-green-600 hover:to-green-400 transition"
+>
+  Contact Us
+</a>
+
+
   ) : (
     <button
       onClick={() => loadRazorpay(plan.name, plan.amount)}
