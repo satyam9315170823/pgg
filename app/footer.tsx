@@ -57,13 +57,13 @@ const Footer = () => {
             >
        info.prettifygoglobal@gmail.com
             </a>
-        <h2>Dubai Office :</h2>    <p className="text-gray-800">
+        <h2 className="font-bold">Dubai Office :</h2>    <p className="text-gray-800">
              Office No: 1904, 19th Floor, The Binary by OMNIYAT,
      Business Bay, Dubai, U.A.E.</p>
 
              
 
-         <h2>Delhi Office :</h2>   
+         <h2 className="font-bold">Delhi Office :</h2>   
             <p className="text-gray-800">
              B-209, Pocket - B, Okhla Phase I,
 Okhla Industrial Estate,

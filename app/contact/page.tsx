@@ -195,7 +195,7 @@ const ContactSection = () => {
                       </div>
                       <div>
                         <span className="text-gray-300 text-sm">Phone:</span>
-                        <div className="font-bold text-lg text-white group-hover/contact:text-green-300 transition-colors duration-300">+91 98106 22349
+                        <div className="font-bold text-lg text-white group-hover/contact:text-green-300 transition-colors duration-300">+9198106 22349 {", "}  +971 52178 6946
 </div>
                       </div>
                     </div>
