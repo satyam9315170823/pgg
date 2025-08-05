@@ -126,7 +126,7 @@ New Delhi - 110020.
                 <p className="text-black text-sm">Thanks for subscribing!</p>
               )}
             </form>
-          </div>z
+          </div>
         </div>
 
         {/* Google Map Section */}
