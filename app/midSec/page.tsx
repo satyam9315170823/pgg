@@ -57,7 +57,7 @@ const MidSec = () => {
         {/* Logo Carousel */}
         <div className="w-full md:w-3/5 mt-4 md:mt-0">
           <InfiniteMovingLogos
-            speed="slow"
+            speed="fast"
             direction="left"
             items={[
               { logo: "/logoMain.svg", name: "Logo" },
